@@ -1,0 +1,872 @@
+/* Estilos Index */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bodyIndex{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right bottom, #25314b, #1c3b57, #103f55, #014455, #036370, #127079, #1f7c80, #2c8683, #329692, #3ca7a1, #54e5dd, #5ffbf1);
+}
+header{
+    height: 80vh;
+}
+.headerA{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 22vh;
+    padding: 20px;
+    position: relative fixed;
+}
+.logo{
+    margin: 10px;
+    height: 20vh;
+}
+.titulo h1{
+    padding: 6vh 10vh 0;
+    font-size: 13vh;
+    position: absolute;
+}
+.titulo h2{
+    position: relative;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 10vh;
+    padding: 15vh 18vh 0 4vh; 
+    margin-left: 120px;
+    color: rgb(245, 251, 252);
+    text-shadow: rgb(29, 36, 36) 5px 5px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin: 0 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 4vh; 
+    font-weight: bold; 
+}
+.menu li:hover{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #969696, 1px 1px;
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}
+/*.menu ul li ul{
+    width: 150px;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px grey;
+    height: 100%;
+    top: 40px;
+    padding: 6px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    transition: all 300ms ease;
+}*/
+.menu .menuDesplegable ul{
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.menu ul li:hover + ul, .menu .menuDesplegable:hover{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+.menu ul li a ul .menu .menuDesplegable:hover{
+    display: block;
+    padding: 6px;
+    margin-left: 10px;
+}
+.iconMenu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 17px;
+}
+.imageIndex{
+    width: 100%;
+    height: 78%;
+    position: absolute;
+    z-index: -1;
+}
+.cards1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subtitulos1{
+    font-size: 50px;
+    height: 80px;
+    padding: 54px 0 20px;
+    margin: 30px;
+    text-align: center;
+}
+.subtitulos2{
+    font-size: 50px;
+    height: 40px;
+    margin: -10px 50px 20px;
+    text-align: center;
+}
+.notasBlog1, .notasBlog2, .notasBlog3 {
+    width: 50vh;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid transparent;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    transition: 500ms;
+}
+.notasBlog1:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.notasBlog2:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.notasBlog3:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.imageBlog{
+    width: 100%;
+    height: 180px;
+}
+.portugal1, .portugal2, .portugal3 {
+    width: 50vh;
+    margin: 30px;
+    text-align: center;
+    border: 1px solid transparent;
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    transition: 500ms;
+}
+.portugal1:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.portugal2:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.portugal3:hover {
+    transform: scale(1.1);
+    background: rgba(24, 23, 23, 0.205);
+}
+.imageBlog{
+      width: 100%;
+}
+.linksIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    background-image: linear-gradient(to left, #047b8b, #148994);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    color: floralwhite;
+    padding: 5px 20px;
+    list-style: none;
+    margin: px 0 px ; 
+}
+.tituloLinks{
+    text-shadow: 2px 2px 2px #35476f;
+}
+.linksIndex a{
+    color: rgb(4, 42, 99);
+    text-shadow: 2px 2px 2px grey;
+    text-decoration: none;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 180px;
+    text-shadow: 10px 10px #35476f;  
+    text-shadow: 2px 2px 5px #999;
+}
+.whatsapp:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.facebook:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.instagram:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.email:hover{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: bold;
+    color: rgb(9, 37, 63);
+    margin-bottom: 10px;
+}
+/*---------------ESTILOS PRIMEROS TRÁMITES----------------*/
+
+.mainPages{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+}
+.headerPrT{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    align-items: center;
+}
+.mainPages h1{
+    margin: 50px;
+}
+.art01{
+    margin: 50px;
+    color: ivory;
+}
+.menuMovil{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin: 0 10px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 4vh; 
+    font-weight: bold; 
+}
+.menu li:hover{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #969696, 1px 1px;
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}
+.iconMenu img{
+    height: 50px;
+    transform: translateX(150px);
+}
+.manIntImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2Pages{
+    margin-bottom: 20px;
+}
+.h3Pages{
+    margin: 20px 0;
+}
+.sectionSobrePortugal h4{
+    margin: 15px 0;
+}
+
+/*---------------ESTILOS DE SOBRE PORTUGAL----------------*/
+.body{
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #192030, #192b3d, #163748, #114452, #115059, #165b61, #1c6668, #25716f, #2b7e7b, #318c88, #379a94, #3ea8a1);
+}
+
+.mainPagesPortugal{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+}
+.sectionPrimerosTramites{
+    margin:50px ;
+}
+.menuPortugal{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    margin-top: -102px;
+    align-items: stretch;
+    background-color: rgb(95, 107, 112, 0.7);
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 1;
+}
+.menuPortugal ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.menuPortugal li{
+    margin: 0 50px;
+}
+.menuPortugal a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 3vh;
+    font-family: 'Dosis', sans-serif; 
+}
+.menuPortugal li:hover{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #969696, 1px 1px;
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}
+.navSobrePortugal{
+    background-image: url(../Images/cascais.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+.imgSobrePortugal {
+    width: 100vh;
+    margin: 0 0 36px;
+    position: relative;
+}
+.imgSobrePortugal img{
+    width: 100vw;
+    margin: 0 -17px;
+}
+.ImagesContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
+    gap: 10px;
+    column-count: 20px;
+    align-items: stretch;
+    overflow: hidden;
+    margin-bottom: 50px;
+    padding: 120px;
+}
+.lisboa, .braga, .aveiro, .algarve{
+    width: 100%;
+}
+.ImagesContainer img:hover{
+    transform: scale(1.9);
+    transition: 500ms;
+}
+.sectionSobrePortugal{
+    margin: 50px 50px 50px;
+}
+.sectionSobrePortugal h2{
+    margin-bottom: 20px;
+}
+.sectionSobrePortugal h3{
+    margin: 20px 0;
+}
+.sectionSobrePortugal h4{
+    margin: 15px 0;
+}
+.mapaPortugal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: px;
+  }
+.mapaPortugal img{
+    width: 60vw;
+}
+.infUtil{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+.infUtil h2{
+    margin: 10px 15px;
+}
+.infUtil p{
+    padding-left: 20px;
+}
+.infUtil a{
+    text-decoration: none;
+    color:rgb(245, 251, 252);
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: rgb(4, 42, 99);
+    border-radius: 20px;
+}
+.botonArriba{
+    text-decoration: none;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    color:rgb(12, 12, 12);
+    padding: 10px 20px;
+    margin: 50px 50px 0 50px;
+    background-color: rgb(147, 177, 221);
+    border-radius: 20px;
+    text-align: right;
+}
+.infUtil a:hover{
+    color: #131212;
+    background-color: #969696;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #969696, 1px 1px;
+    transition: all 200ms ease;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-image: linear-gradient(to right, #24989c, #148994);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    color: floralwhite;
+    padding: 25px;
+    list-style: none;
+    margin: 30px 0 10px ; 
+}
+
+/*------------ESTILOS DE CONTACTO---------------*/
+
+.body.Contacto{
+    font-family: 'Dosis', sans-serif;
+    background-image: linear-gradient(to right bottom, #35476f, #28547b, #176284, #026f89, #047b8b, #148994, #24989c, #35a6a3, #3fbbb6, #49d0ca, #54e5dd, #5ffbf1);
+}
+.mainContacto{
+    background-image: url(../Images/contacto.jpg);
+    height: 450px;
+    width: 100%;
+    font-family: 'Dosis', sans-serif; 
+    font-weight: bold; 
+}
+.sectionContacto{
+    margin-left: 380px;
+}
+.sectionContacto h3{
+    color: white;
+}
+.h3Contacto{
+    padding-top: 30px;
+    color: white;
+}
+.formContacto{
+    padding-top: 20px;
+    width: 500px;
+}
+.formContacto div{
+    margin: 7px;
+}
+.h4Contacto{
+    padding: 10px 0;
+    color: white;
+}
+.formContacto textarea{
+    resize: none;
+}
+.footerContacto{
+    margin: 30px 0 10px 10px;
+}
+
+/*Responsive Design*/
+
+@media (max-width: 1220px){
+    header{
+        height: 400px;
+    }
+    .headerA, 
+    .headerB,
+    .mainIndex{
+        max-width: 100vw;
+        padding: 0 20px;
+        justify-content: space-around;
+    }
+    .headerB .subtitulos1{
+        padding: 60px  0 10px;
+    }
+    .headerB{
+        margin-left: -20px;
+    }
+    .imageIndex{
+        max-height: 350px;
+    }    
+    .linksIndex{
+        margin: -19px;
+        padding: 20px;  
+    }
+    .copyright{
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 1060px){
+
+    .headerA{
+        height: 15vh;
+    }
+    .logo{
+        height: 14vh;
+    }
+    .mainIndex{
+        height: 710px;
+    }
+    header{
+        height: 350px;
+    }
+    .cards1 img,
+    .cards2 img{
+        justify-content: center;
+        max-height:150px;
+    }
+    .titulo h1{
+        font-size: 10vh;
+        padding: 6vh 6vh 0;
+    }
+    .titulo h2{
+        font-size: 8vh;
+        margin-left: 60px;
+    }
+    .subtitulos1, .subtitulos2{
+        font-size: 40px;
+    }
+    .imageIndex{
+        max-height: 300px;
+    }
+    .linksIndex{
+        font-size: 18px;
+        height: 100px;
+        width: 100vw;
+        margin: -19px;
+        padding: 20px;  
+    }
+    .copyright{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 850px){
+
+    header{
+        height: 215px;
+    }
+    .headerA{
+        height: 11vh;
+        justify-content: left;
+    }
+    .logo{
+        height: 17vh;
+    }
+
+    .headerA{
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        padding-top: 7px;
+        left: 0;
+        transform: translateX(-150px);
+        background-image: linear-gradient(to right bottom, #25314b, #24334d, #223450, #213652, #1f3854, #1d3955, #1b3b56, #193c57, #163d57, #143e56, #123e56, #103f55);
+        overflow: hidden;
+        box-shadow: 10px 0 20px -15px black;
+        z-index: 1;
+    }
+    .headerAShow{
+        width: 150px;
+        transform: translateX(0);
+        transition: 300ms;
+    }
+    
+    /*
+    .menu{
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+        padding-top: 40px;
+        top: 30px;
+        left: 0;
+        background-image: linear-gradient(to right bottom, #25314b, #24334d, #223450, #213652, #1f3854, #1d3955, #1b3b56, #193c57, #163d57, #143e56, #123e56, #103f55);
+        overflow: hidden;
+        box-shadow: 10px 0 20px -15px black;
+        z-index: 1;
+    }*/
+    .headerA ul{
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .headerA ul li{
+        max-width: 200px;
+        height: 66px;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .headerA ul li a{
+        width: 10px;
+    }
+    .headerA a{
+        font-size: 15px;
+    }
+    #iconMenu{
+        display: flex;
+        border-radius: 30%;
+        background-color: #ffffff;
+        height: 50px;
+        width: 50px;
+    }
+    .mainIndex{
+        height: 600px;
+        justify-content: space-between;        
+    }
+    .titulo h1{
+        font-size: 7vh;
+    }
+    .titulo h2{
+        padding:65px ;
+        font-size: 5vh;
+        margin-left: 0;
+    }
+    .subtitulos1{
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+    .subtitulos2{
+        height: 50px;
+        padding: 10px;
+        margin: 0;
+        font-size: 30px;
+    }
+    .cards1 img,
+    .cards2 img{
+        justify-content: center;
+        max-height:100px;
+        flex-wrap: wrap;
+        padding-bottom: 13px;
+    }
+    .notasBlog1, .notasBlog2, .notasBlog3{
+        margin: 5px;
+        max-height: 100px;
+        max-width: 180px;
+    }
+    .portugal1, .portugal2, .portugal3{
+        margin: 5px;
+        max-height: 100px;
+        max-width: 180px;
+    }
+    .portugal1 h3, .portugal2 h3, .portugal3 h3{
+        font-size: 12px;
+        margin: -21;
+    }
+    .notasBlog1, .notasBlog2, .notasBlog3{
+        font-size: 12px;
+    }
+    .imageIndex{
+        max-height: 200px;
+    }
+    .iconMenu img{
+        height: 50px;
+        transform: translateX(-120px);
+    }
+    .headerPrT{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .sectionPrimerosTramites p{
+        font-size: 10;
+    }
+    
+    
+}
+
+@media (max-width:600px) {
+    .bodyIndex{
+        background-color: #014455;
+    }
+    .mainIndex{
+        height: 700px;
+        align-items: center;
+    }
+    header{
+        height: 150px;
+    }
+    .headerA{
+        height: 8vh;
+    }
+    .headerA{
+        width: 150px;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        padding-top: 7px;
+        left: 0;
+        transform: translateX(-150px);
+        background-image: linear-gradient(to right bottom, #25314b, #24334d, #223450, #213652, #1f3854, #1d3955, #1b3b56, #193c57, #163d57, #143e56, #123e56, #103f55);
+        overflow: hidden;
+        box-shadow: 10px 0 20px -15px black;
+        z-index: 1;
+    }
+    .headerAShow{
+        transform: translateX(0);
+    }
+    .headerA ul{
+        flex-direction: column;
+        padding-top: 50px;
+        align-items: center;
+    }
+    .headerA ul li{
+        max-width: 200px;
+        height: 66px;
+        margin-top: 5px;
+    }
+    .headerA ul li a{
+        width: 10px;
+        align-items: right;
+    }
+    .headerA a{
+        font-size: 15px;
+    }
+    .imageIndex{
+        max-height: 130px;
+    }
+    .logo{
+        height: 17vh;
+    }
+    .menu{
+        width: 0;
+        height: 100vh;
+    }
+    .titulo h1{
+        font-size: 4vh;
+    }
+    .titulo h2{
+        padding:51px ;
+        font-size: 2.5vh;
+        margin-left: 3px;
+    }
+    .cards1{
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    .cards2{
+        justify-content: center;
+        align-items: center;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    .subtitulos1{
+        height: 30px;
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    .subtitulos2{
+        height: 20px;
+        padding: 30px;
+        margin: 0;
+        font-size: 20px;
+    }
+    .linksIndex{
+        font-size: 8px;
+        height: 60px;
+        width: 100vw;
+        margin: 10px;
+        padding: 0 20px;  
+    }
+    .socialMedia{
+        justify-content: flex-start;
+        width: 120px;
+    }
+    .socialMedia img{
+        justify-content: flex-start;
+        height: 25px;
+    }
+    .copyright{
+        font-size: 10px;
+        padding-top: 5px;
+    }
+    .imageManifestacion{
+        height: auto;
+        width: 280px;
+        padding:30px;
+    }
+    .iconMenu img{
+        height: 50px;
+        transform: translateX(-80px);
+    }
+}
+@media (max-width:419px){
+
+    .mainIndex{
+        height: 1000px;
+    }
+    .cards1{
+        height: 400px;
+    }
+    .cards2{
+        height: 400px;
+    }
+    .subtitulos2{
+        height: 30px;
+        padding-top: 0px;
+        margin: 0;
+        font-size: 20px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .manIntImg{
+        width: 280px;
+    }
+    .iconMenu img{
+        height: 50px;
+        transform: translateX(-60px);
+    }
+}
+
+
+
+
+/*headerA Nav
+HeaderB Portada
+mainInedx Cards
+linksIndex links
+footerIndex*/
